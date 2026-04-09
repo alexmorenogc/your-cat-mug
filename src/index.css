@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+
+  --color-surface-container-low: #fefcc4;
+  --color-primary: #815c48;
+  --color-primary-container: #fecdb4;
+  --color-on-primary-container: #654330;
+  --color-secondary: #586a48;
+  --color-secondary-container: #d5e9bf;
+  --color-on-secondary-container: #465736;
+  --color-tertiary-container: #f3dead;
+  --color-on-tertiary-container: #5d4e29;
+  --color-on-surface: #3a3a00;
+  --color-on-surface-variant: #676729;
+  --color-outline-variant: #bdbd75;
+  --color-surface-container-highest: #edec9f;
+  --color-surface-container-high: #f2f2ad;
+}
+
+@layer base {
+  body {
+    @apply bg-[#FFFDD0] text-on-surface font-body;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 15c-2 0-3 1-3 3s1 3 3 3 3-1 3-3-1-3-3-3zm10 0c-2 0-3 1-3 3s1 3 3 3 3-1 3-3-1-3-3-3zm5 10c-2 0-3 1-3 3s1 3 3 3 3-1 3-3-1-3-3-3zm-10 0c-2 0-3 1-3 3s1 3 3 3 3-1 3-3-1-3-3-3z' fill='%23815c48' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+  }
+}
+
+.signature-gradient {
+  background: linear-gradient(135deg, #815c48 0%, #fecdb4 100%);
+}
+
