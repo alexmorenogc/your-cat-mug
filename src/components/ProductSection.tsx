@@ -50,7 +50,7 @@ export const ProductSection: React.FC<ProductSectionProps> = ({ product, reverse
           >
             {product.name}
           </h2>
-          <p className="text-lg text-stone-700 leading-relaxed">
+          <p className="text-lg text-stone-700 leading-relaxed"  style={{ whiteSpace: 'pre-line' }}>
             {product.description}
           </p>
           <motion.button 

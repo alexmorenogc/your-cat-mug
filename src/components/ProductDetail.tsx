@@ -97,41 +97,36 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack })
           </div>
 
           <div className="prose prose-stone">
-            <p className="text-lg leading-relaxed text-on-surface/80 font-light">
+            <p className="text-lg leading-relaxed text-on-surface/80 font-light" style={{ whiteSpace: 'pre-line' }}>
               {product.description}
             </p>
           </div>
 
-          <div className="space-y-6 pt-4">
-            <div className="flex flex-col space-y-4">
-              <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Cantidad</label>
-              <div className="flex items-center bg-surface-container-high w-fit rounded-full px-4 py-2 space-x-6">
-                <button 
-                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="w-8 h-8 rounded-full hover:bg-white flex items-center justify-center transition-colors"
-                >
-                  <Minus size={16} />
-                </button>
-                <span className="font-bold text-lg font-headline">{quantity}</span>
-                <button 
-                  onClick={() => setQuantity(quantity + 1)}
-                  className="w-8 h-8 rounded-full hover:bg-white flex items-center justify-center transition-colors"
-                >
-                  <Plus size={16} />
-                </button>
-              </div>
-            </div>
-
-            <motion.button 
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => addToCart(product, quantity)}
-              className="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 px-10 rounded-full font-bold text-xl shadow-[0_15px_30px_rgba(129,92,72,0.2)] hover:shadow-[0_20px_40px_rgba(129,92,72,0.3)] transition-all flex items-center justify-center space-x-3"
+          <div className="flex items-center bg-surface-container-high w-fit rounded-full px-4 py-2 space-x-6">
+            <button 
+              onClick={() => setQuantity(Math.max(1, quantity - 1))}
+              className="w-8 h-8 rounded-full hover:bg-white flex items-center justify-center transition-colors"
             >
-              <ShoppingBag size={24} />
-              <span>Añadir al arenero</span>
-            </motion.button>
+              <Minus size={16} />
+            </button>
+            <span className="font-bold text-lg font-headline">{quantity}</span>
+            <button 
+              onClick={() => setQuantity(quantity + 1)}
+              className="w-8 h-8 rounded-full hover:bg-white flex items-center justify-center transition-colors"
+            >
+              <Plus size={16} />
+            </button>
           </div>
+
+          <motion.button 
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => addToCart(product, quantity)}
+            className="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 px-10 rounded-full font-bold text-xl shadow-[0_15px_30px_rgba(129,92,72,0.2)] hover:shadow-[0_20px_40px_rgba(129,92,72,0.3)] transition-all flex items-center justify-center space-x-3"
+          >
+            <ShoppingBag size={24} />
+            <span>Añadir al arenero</span>
+          </motion.button>
 
           <button 
             onClick={onBack}
