@@ -1,24 +1,30 @@
 import { Product } from './types';
-import Mojo1 from './img/Mojo1.jpg';
+import Mojo1 from './img/Mojo1.png';
 import Mojo2 from './img/Mojo2.png';
-import Mojo3 from './img/Mojo3.jpeg';
-import Mojo4 from './img/Mojo4.mp4';
-import Gordi1 from './img/Gordi1.jpeg';
-import Gordi2 from './img/Gord2.png';
-import Gordi3 from './img/Gordi3.jpeg';
-import Gordi4 from './img/Gordi4.mp4';
-import Marshall1 from './img/Marshall1.jpeg';
-import Marshall2 from './img/Marshall2.jpeg';
+import Mojo3 from './img/Mojo3.png';
+import Mojo4 from './img/Mojo4.png';
+import Mojo5 from './img/Mojo5.mp4';
+import Gordi1 from './img/Gordi1.png';
+import Gordi2 from './img/Gordi2.png';
+import Gordi3 from './img/Gordi3.png';
+import Gordi4 from './img/Gordi4.png';
+import Gordi5 from './img/Gordi5.mp4';
+import Marshall1 from './img/Marshall1.png';
+import Marshall2 from './img/Marshall2.png';
 import Marshall3 from './img/Marshall3.png';
-import Marshall4 from './img/Marshall4.mp4';
-import Ron1 from './img/Ron1.jpeg';
-import Ron2 from './img/Ron2.jpeg';
+import Marshall4 from './img/Marshall4.png';
+import Marshall5 from './img/Marshall5.mp4';
+import Ron1 from './img/Ron1.png';
+import Ron2 from './img/Ron2.png';
 import Ron3 from './img/Ron3.png';
-import Ron4 from './img/Ron4.mp4';
-import Kobe1 from './img/Kobe1.jpeg';
-import Kobe2 from './img/Kobe2.jpeg';
+import Ron4 from './img/Ron4.png';
+import Ron5 from './img/Ron5.mp4';
+import Kobe1 from './img/Kobe1.png';
+import Kobe2 from './img/Kobe2.png';
 import Kobe3 from './img/Kobe3.png';
-import Kobe4 from './img/Kobe4.mp4';
+import Kobe4 from './img/Kobe4.png';
+import Kobe5 from './img/Kobe5.mp4';
+
 
 export const PRODUCTS: Product[] = [
   {
@@ -32,7 +38,8 @@ export const PRODUCTS: Product[] = [
     gallery: [
       Gordi2,
       Gordi3,
-      Gordi4
+      Gordi4,
+      Gordi5
     ],
     isCatApproved: true
   },
@@ -47,7 +54,8 @@ export const PRODUCTS: Product[] = [
     gallery: [
       Marshall2,
       Marshall3,
-      Marshall4
+      Marshall4,
+      Marshall5
     ],
     isCatApproved: true
   },
@@ -62,7 +70,8 @@ export const PRODUCTS: Product[] = [
     gallery: [
       Ron2,
       Ron3,
-      Ron4
+      Ron4,
+      Ron5
     ],
     isCatApproved: true
   },
@@ -77,7 +86,8 @@ export const PRODUCTS: Product[] = [
     gallery: [
       Mojo2,
       Mojo3,
-      Mojo4
+      Mojo4,
+      Mojo5
     ],
     isCatApproved: true
   },
@@ -92,7 +102,8 @@ export const PRODUCTS: Product[] = [
     gallery: [
       Kobe2,
       Kobe3,
-      Kobe4
+      Kobe4,
+      Kobe5
     ],
     isCatApproved: true
   }
