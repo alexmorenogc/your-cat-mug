@@ -90,7 +90,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose })
                           rows={3}
                           value={formData.address}
                           onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                          placeholder="Jose Arconges Gil 110"
+                          placeholder="Michicasa 123, Michiciudad"
                           className="w-full bg-white border-2 border-primary/10 rounded-2xl px-6 py-4 focus:border-primary outline-none transition-colors font-body resize-none"
                         />
                       </div>
